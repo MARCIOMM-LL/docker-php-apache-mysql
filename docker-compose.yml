@@ -6,7 +6,7 @@ services:
         ports:
             - "91:80"
         volumes:
-            - ./:/var/www/html/
+            - ./www:/var/www/html/
         links:
             - db
         networks:
@@ -19,7 +19,6 @@ services:
             MYSQL_DATABASE: myDb
             MYSQL_USER: root
             MYSQL_PASSWORD: 1112marci-O
-            MYSQL_ROOT_PASSWORD: 1112marci-O
         volumes:
             - ./dump:/docker-entrypoint-initdb.d
             - persistent:/var/lib/mysql
