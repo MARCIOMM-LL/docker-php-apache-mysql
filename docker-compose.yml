@@ -15,10 +15,11 @@ services:
         image: mysql:8.0
         ports:
             - "3307:3306"
+        restart: always
         environment:
             MYSQL_DATABASE: myDb
             MYSQL_USER: root
-            MYSQL_PASSWORD: 1112marci-O
+            MYSQL_PASSWORD: '1112marci-O'
         volumes:
             - persistent:/var/lib/mysql
         networks:

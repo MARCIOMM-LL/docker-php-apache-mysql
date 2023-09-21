@@ -10,6 +10,11 @@
 
 </head>
 <body>
+
+<?php
+phpinfo();
+?>
+
     <div class="container">
     <?php echo "<h1>Hi! I'm Márcio</h1>"; ?>
 	<?php echo "<h3>This is Docker Compose Class!</h3>"; ?>
