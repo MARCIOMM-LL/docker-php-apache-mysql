@@ -20,7 +20,7 @@ phpinfo();
 	<?php echo "<h3>This is Docker Compose Class!</h3>"; ?>
 
     <?php
-    $conn = new PDO("mysql:host=localhost;port=3307;dbname=myDb", 'root', '1112marci-O');
+    $conn = new PDO("mysql:host=localhost;port=3306;dbname=myDb", 'root', '1112marci-O');
     $query = 'SELECT * From Person';
     $result = $conn->query($query);
     echo '<table class="table table-striped">';
